@@ -96,7 +96,7 @@ header a :hover{
 #mainshow{
     min-height: 300px;
     
-    background: url('../img/download.jfif') no-repeat 0;
+    background: url('download.jfif') no-repeat 0;
     text-align: center;
     background-size: cover;
     color: white;
