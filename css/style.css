@@ -8,6 +8,7 @@ body{
 
 }
 /* global */
+
 .container{
     margin: auto;
     width: 80%;
@@ -27,6 +28,15 @@ ul{
     padding-right: 20px;
     color: white;
 
+}
+
+.dark{
+    padding: 15px;
+    background-color: rgb(95, 81, 81);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 header{
@@ -112,11 +122,12 @@ header a :hover{
 
 #newsletter form{
     float: right;
+    text-align: center;
     margin-top: 15px;
 }
 
 #newsletter input[type="email"]{
-    padding: px ;
+    
     height: 25px;
     width: 250px;
 }
@@ -134,6 +145,36 @@ header a :hover{
     padding: 10px;
 }
 
+/* sidebar*/
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* main-col*/
+
+article#main-col{
+    float: left;
+    width: 60%;
+
+}
+
+/* services*/
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: grey solid 5px;
+    margin-top: 5px;
+    background-color: lightgray;
+}
 footer{
     padding: 20px;
     margin-top: 20px;
@@ -141,4 +182,35 @@ footer{
     background-color: rgb(95, 81, 81);
     text-align: center;
 
+}
+
+/* media queries*/
+@media(max-width: 768px){
+    header #logo,
+    header nav,
+    header nav li,
+    #newsletter h1, #newsletter form,
+    #boxes .box , article#main-col, aside#sidebar
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #mainshow h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
